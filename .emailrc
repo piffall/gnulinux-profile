@@ -1,0 +1,3 @@
+# Export var to use
+# heirloom-mailx
+export MAIL=$HOME/Maildir
