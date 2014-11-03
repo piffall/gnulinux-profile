@@ -1,0 +1,9 @@
+set editing-mode vi
+set show-mode-in-prompt on
+
+set keymap vi-insert
+control-l: clear-screen
+
+set keymap vi-command
+"gg": beginning-of-history
+"G": end-of-history
