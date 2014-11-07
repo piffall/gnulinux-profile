@@ -56,3 +56,6 @@ set nobackup
 set noswapfile
 set nobomb
 set clipboard=unnamed
+
+" Pathogen plugin
+execute pathogen#infect()
