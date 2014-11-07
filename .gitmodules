@@ -7,3 +7,6 @@
 [submodule ".vim/VIMPlugins"]
 	path = .vim/VIMPlugins
 	url = https://github.com/piffall/VIMPlugins.git
+[submodule ".vim/3rds-plugins/snipMate"]
+	path = .vim/3rds-plugins/snipMate
+	url = git@github.com:piffall/snipMate.git
