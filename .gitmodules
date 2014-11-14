@@ -10,3 +10,6 @@
 [submodule ".vim/3rds-plugins/snipMate"]
 	path = .vim/3rds-plugins/snipMate
 	url = https://github.com/piffall/snipMate.git
+[submodule ".vim/3rds-plugins/taglist.vim"]
+	path = .vim/3rds-plugins/taglist.vim
+	url = https://github.com/vim-scripts/taglist.vim.git

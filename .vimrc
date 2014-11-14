@@ -33,6 +33,7 @@ set number
 " NERDtree
 map <F2> :tabnew<CR>:NERDTreeMirror<CR>
 map <F3> :tabc<CR>
+map <F4> :TlistToggle<CR>
 map <F5> :NERDTreeFocus<CR>
 map <F6> :NERDTreeToggle<CR>
 
