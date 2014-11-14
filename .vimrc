@@ -33,7 +33,6 @@ set number
 " NERDtree
 map <F2> :tabnew<CR>:NERDTreeMirror<CR>
 map <F3> :tabc<CR>
-map <F4> :TlistToggle<CR>
 map <F5> :NERDTreeFocus<CR>
 map <F6> :NERDTreeToggle<CR>
 
@@ -49,7 +48,6 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 " Bash with screens
-map <F8> :ConqueTermSplit bash<CR>
 " map <F9> :!~/scripts/script.sh > /dev/null<CR>
 
 set nobackup
