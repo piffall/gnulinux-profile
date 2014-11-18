@@ -1,0 +1,6 @@
+# PATH configuration
+# loaded in ~/.bashrc
+
+# Paths 
+#PATH=$PATH:$HOME/bin
+#export PATH

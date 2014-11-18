@@ -111,3 +111,6 @@ fi
 
 # email configuration
 . ~/.emailrc
+
+# path configuration
+. ~/.pathrc
