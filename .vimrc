@@ -19,26 +19,25 @@ cmap w!! w !sudo tee %<CR>
 
 " You might also find this useful
 " PHP Generated Code Highlights (HTML & SQL)                                              
-
 "let php_sql_query=1                                                                                        
 "let php_htmlInStrings=1
 
 " Line numbers
 set number
-" set autochdir
 
-"set listchars=extends:>
-"set listchars+=precedes:<
+" Autochange directory
+"set autochdir
 
-" NERDtree
+" F? Shortcuts
 map <F2> :tabnew<CR>:NERDTreeMirror<CR>
 map <F3> :tabc<CR>
 map <F4> :TlistToggle<CR>
 map <F5> :NERDTreeFocus<CR>
 map <F6> :NERDTreeToggle<CR>
 
+" NERDTree
 let NERDTreeChDirMode=2
-"let NERDTreeShowBookmarks=1
+let NERDTreeShowBookmarks=1
 
 " Date and type
 set rulerformat=%39(%{strftime('%x\ %H:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
@@ -48,13 +47,16 @@ if $COLORTERM == 'gnome-terminal'
 	set t_Co=256
 endif
 
-" Bash with screens
+" Run script
 " map <F9> :!~/scripts/script.sh > /dev/null<CR>
 
+" NO!: SWAP, backup and BOM
 set nobackup
 set noswapfile
 set nobomb
-set clipboard=unnamed
+
+" System clipboard
+set clipboard=unnamedplus
 
 " Pathogen plugin
 execute pathogen#infect()

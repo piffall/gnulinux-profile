@@ -114,3 +114,37 @@ fi
 
 # path configuration
 . ~/.pathrc
+
+# Colors
+CRED="\x1b[31;01m"
+CBLUE="\x1b[34;01m"
+CGRAY="\x1b[30;01m"
+CRESET="\x1b[39;49;00m"
+
+# outputs
+function info(){
+    echo -e "$CBLUE"$@"$CRESET"
+}
+function warning(){
+    echo -e "$CRED"$@"$CRESET"
+}
+function debug(){
+    echo -e "$CGRAY"$@"$CRESET"
+}
+
+
+# helpers
+superkill() {
+    PROCESSES=`ps x | grep $1 | head -n -1`
+    PROC_IDS=`ps x | grep $1 | head -n -1 | awk '{print $1}'`
+    info "You are going to kill all these processes:"
+    echo "$PROCESSES"
+    echo -e $CRED
+    read -p "Are you sure? (N,y)" -n 1 -r
+    echo -e $CRESET
+    if [[ $REPLY =~ ^[Yy]$ ]]
+    then
+        debug "Killing: kill -9 $PROC_IDS"
+        kill -9 $PROC_IDS
+    fi
+}
