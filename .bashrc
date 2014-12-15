@@ -135,8 +135,13 @@ function debug(){
 
 # helpers
 superkill() {
-    PROCESSES=`ps x | grep $1 | head -n -1`
-    PROC_IDS=`ps x | grep $1 | head -n -1 | awk '{print $1}'`
+    if [[ $# != 1 ]]
+    then
+        echo "Usage: superkill [pattern]"
+        return
+    fi
+    PROCESSES=`ps ax | grep $1 | head -n -1`
+    PROC_IDS=`ps ax | grep $1 | head -n -1 | awk '{print $1}'`
     info "You are going to kill all these processes:"
     echo "$PROCESSES"
     echo -e $CRED
