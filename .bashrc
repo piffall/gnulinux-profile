@@ -137,11 +137,10 @@ function debug(){
 superkill() {
     if [[ $# != 1 ]]
     then
-        echo "Usage: superkill [pattern]"
+        echo "Usage: superkill [regexp]"
         return
     fi
     PROCESSES=`ps ax | grep $1 | head -n -1`
-    PROC_IDS=`ps ax | grep $1 | head -n -1 | awk '{print $1}'`
     info "You are going to kill all these processes:"
     echo "$PROCESSES"
     echo -e $CRED
@@ -149,7 +148,7 @@ superkill() {
     echo -e $CRESET
     if [[ $REPLY =~ ^[Yy]$ ]]
     then
-        debug "Killing: kill -9 $PROC_IDS"
-        kill -9 $PROC_IDS
+        debug "Killing: killall -r $1"
+        killall -r $1
     fi
 }
