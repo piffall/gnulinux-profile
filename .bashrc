@@ -140,7 +140,7 @@ superkill() {
         echo "Usage: superkill [regexp]"
         return
     fi
-    PROCESSES=`ps ax | grep $1 | head -n -1`
+    PROCESSES=`ps ax | grep '$1' | head -n -1`
     info "You are going to kill all these processes:"
     echo "$PROCESSES"
     echo -e $CRED
@@ -148,7 +148,7 @@ superkill() {
     echo -e $CRESET
     if [[ $REPLY =~ ^[Yy]$ ]]
     then
-        debug "Killing: killall -r $1"
+        debug "Killing: killall -r '$1'"
         killall -r $1
     fi
 }
