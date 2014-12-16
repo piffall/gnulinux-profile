@@ -131,24 +131,3 @@ function warning(){
 function debug(){
     echo -e "$CGRAY"$@"$CRESET"
 }
-
-
-# helpers
-superkill() {
-    if [[ $# != 1 ]]
-    then
-        echo "Usage: superkill [regexp]"
-        return
-    fi
-    PROCESSES=`ps ax | grep '$1' | head -n -1`
-    info "You are going to kill all these processes:"
-    echo "$PROCESSES"
-    echo -e $CRED
-    read -p "Are you sure? (N,y)" -n 1 -r
-    echo -e $CRESET
-    if [[ $REPLY =~ ^[Yy]$ ]]
-    then
-        debug "Killing: killall -r '$1'"
-        killall -r $1
-    fi
-}
