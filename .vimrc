@@ -60,3 +60,18 @@ set clipboard=unnamedplus
 
 " Pathogen plugin
 execute pathogen#infect()
+
+" Vundle
+call vundle#begin()
+
+" Vundle plugin
+Plugin 'gmarik/Vundle.vim'
+
+" NerdTree
+Plugin 'scrooloose/nerdtree'
+
+" snipMate
+Plugin 'piffall/snipMate'
+
+" taglist.vim
+Plugin 'vim-scripts/taglist.vim'

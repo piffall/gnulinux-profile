@@ -1,18 +1,9 @@
-[submodule ".vim/bundle/nerdtree"]
-	path = .vim/3rds-plugins/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
 [submodule ".vim/3rds-plugins/vim-pathogen"]
 	path = .vim/3rds-plugins/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
 [submodule ".vim/VIMPlugins"]
 	path = .vim/VIMPlugins
 	url = https://github.com/piffall/VIMPlugins.git
-[submodule ".vim/3rds-plugins/snipMate"]
-	path = .vim/3rds-plugins/snipMate
-	url = https://github.com/piffall/snipMate.git
-[submodule ".vim/3rds-plugins/taglist.vim"]
-	path = .vim/3rds-plugins/taglist.vim
-	url = https://github.com/vim-scripts/taglist.vim.git
 [submodule ".vim/3rds-plugins/Vundle"]
 	path = .vim/3rds-plugins/Vundle
 	url = https://github.com/gmarik/Vundle.vim.git
