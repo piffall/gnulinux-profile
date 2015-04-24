@@ -13,3 +13,6 @@
 [submodule ".vim/3rds-plugins/taglist.vim"]
 	path = .vim/3rds-plugins/taglist.vim
 	url = https://github.com/vim-scripts/taglist.vim.git
+[submodule ".vim/3rds-plugins/Vundle"]
+	path = .vim/3rds-plugins/Vundle
+	url = https://github.com/gmarik/Vundle.vim.git
