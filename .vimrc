@@ -75,3 +75,6 @@ Plugin 'piffall/snipMate'
 
 " taglist.vim
 Plugin 'vim-scripts/taglist.vim'
+
+" Git plugin
+Plugin 'Xuyuanp/nerdtree-git-plugin'
