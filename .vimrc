@@ -43,9 +43,7 @@ let NERDTreeShowBookmarks=1
 " set rulerformat=%39(%{strftime('%x\ %H:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
 
 " Colors
-if $COLORTERM == 'gnome-terminal'
-	set t_Co=256
-endif
+set t_Co=256
 
 " Run script
 " map <F9> :!~/scripts/script.sh > /dev/null<CR>
