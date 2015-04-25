@@ -66,11 +66,20 @@ execute pathogen#infect()
 	" Begin
 	call vundle#begin()
 
-	" Plugins
+	" General plugins
 	Plugin 'gmarik/Vundle.vim'
 	Plugin 'scrooloose/nerdtree'
 	Plugin 'piffall/snipMate'
 	Plugin 'vim-scripts/taglist.vim'
 	Plugin 'Xuyuanp/nerdtree-git-plugin'
 	Plugin 'bling/vim-airline'
+
+	" Python
+	Plugin 'nvie/vim-flake8'
+
+	" PHP
+	Plugin 'spf13/PIV'
 " }
+
+" Disable PIV plugin PHP Autofolding
+let g:DisableAutoPHPFolding = 1
