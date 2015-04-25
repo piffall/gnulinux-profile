@@ -40,7 +40,7 @@ let NERDTreeChDirMode=2
 let NERDTreeShowBookmarks=1
 
 " Date and type
-set rulerformat=%39(%{strftime('%x\ %H:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
+" set rulerformat=%39(%{strftime('%x\ %H:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
 
 " Colors
 if $COLORTERM == 'gnome-terminal'
@@ -62,19 +62,15 @@ set clipboard=unnamedplus
 execute pathogen#infect()
 
 " Vundle
-call vundle#begin()
+" {
+	" Begin
+	call vundle#begin()
 
-" Vundle plugin
-Plugin 'gmarik/Vundle.vim'
-
-" NerdTree
-Plugin 'scrooloose/nerdtree'
-
-" snipMate
-Plugin 'piffall/snipMate'
-
-" taglist.vim
-Plugin 'vim-scripts/taglist.vim'
-
-" Git plugin
-Plugin 'Xuyuanp/nerdtree-git-plugin'
+	" Plugins
+	Plugin 'gmarik/Vundle.vim'
+	Plugin 'scrooloose/nerdtree'
+	Plugin 'piffall/snipMate'
+	Plugin 'vim-scripts/taglist.vim'
+	Plugin 'Xuyuanp/nerdtree-git-plugin'
+	Plugin 'bling/vim-airline'
+" }
