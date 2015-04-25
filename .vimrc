@@ -81,3 +81,11 @@ execute pathogen#infect()
 
 " Disable PIV plugin PHP Autofolding
 let g:DisableAutoPHPFolding = 1
+
+" Powerline fonts
+" Installation: git clone https://github.com/powerline/fonts.git powerline-fonts && ./powerline-fonts/install.sh
+" You must set one of the installed fonts,
+" https://github.com/powerline/fonts/blob/master/README.rst
+" Uncomment next line to enable
+"let g:airline_powerline_fonts = 1
+
