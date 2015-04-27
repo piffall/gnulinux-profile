@@ -75,12 +75,8 @@ execute pathogen#infect()
 	" Python
 	Plugin 'nvie/vim-flake8'
 
-	" PHP
-	Plugin 'spf13/PIV'
 " }
 
-" Disable PIV plugin PHP Autofolding
-let g:DisableAutoPHPFolding = 1
 
 " Powerline fonts
 " Installation: git clone https://github.com/powerline/fonts.git powerline-fonts && ./powerline-fonts/install.sh
