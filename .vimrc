@@ -71,6 +71,7 @@ execute pathogen#infect()
 	Plugin 'vim-scripts/taglist.vim'
 	Plugin 'Xuyuanp/nerdtree-git-plugin'
 	Plugin 'bling/vim-airline'
+	Plugin 'Valloric/YouCompleteMe'
 
 	" Python
 	Plugin 'nvie/vim-flake8'
