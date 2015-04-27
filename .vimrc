@@ -86,5 +86,5 @@ set clipboard=unnamedplus
 " You must set one of the installed fonts,
 " https://github.com/powerline/fonts/blob/master/README.rst
 " Uncomment next line to enable
-"let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 1
 
