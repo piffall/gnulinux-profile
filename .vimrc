@@ -3,6 +3,31 @@
 syntax on
 color default
 
+" Vundle
+" {
+ 	set nocompatible
+	filetype off
+
+	" Initiate Vundle
+	set rtp+=~/.vim/bundle/Vundle.vim
+	call vundle#begin()
+
+	" General plugins
+	Plugin 'gmarik/Vundle.vim'
+	Plugin 'scrooloose/nerdtree'
+	Plugin 'piffall/snipMate'
+	Plugin 'vim-scripts/taglist.vim'
+	Plugin 'Xuyuanp/nerdtree-git-plugin'
+	Plugin 'bling/vim-airline'
+	Plugin 'Valloric/YouCompleteMe'
+
+	" Python
+	Plugin 'nvie/vim-flake8'
+
+	call vundle#end()
+
+" }
+
 " Filetype
 filetype plugin on
 filetype plugin indent on
@@ -55,29 +80,6 @@ set nobomb
 
 " System clipboard
 set clipboard=unnamedplus
-
-" Pathogen plugin
-execute pathogen#infect()
-
-" Vundle
-" {
-	" Begin
-	call vundle#begin()
-
-	" General plugins
-	Plugin 'gmarik/Vundle.vim'
-	Plugin 'scrooloose/nerdtree'
-	Plugin 'piffall/snipMate'
-	Plugin 'vim-scripts/taglist.vim'
-	Plugin 'Xuyuanp/nerdtree-git-plugin'
-	Plugin 'bling/vim-airline'
-	Plugin 'Valloric/YouCompleteMe'
-
-	" Python
-	Plugin 'nvie/vim-flake8'
-
-" }
-
 
 " Powerline fonts
 " Installation: git clone https://github.com/powerline/fonts.git powerline-fonts && ./powerline-fonts/install.sh
