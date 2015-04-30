@@ -1,5 +1,4 @@
-" Color
-
+" Syntax highlight
 syntax on
 color default
 
@@ -49,6 +48,10 @@ cmap w!! w !sudo tee %<CR>
 
 " Line numbers
 set number
+
+" Search
+set ignorecase
+set hlsearch
 
 " Autochange directory
 "set autochdir
