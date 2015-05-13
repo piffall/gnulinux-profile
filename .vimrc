@@ -22,6 +22,7 @@ color default
 
 	" Python
 	Plugin 'nvie/vim-flake8'
+	Plugin 'pydoc.vim'
 
 	call vundle#end()
 
