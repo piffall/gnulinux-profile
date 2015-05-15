@@ -52,7 +52,7 @@ set number
 
 " Search
 set ignorecase
-set hlsearch
+"set hlsearch
 
 " Autochange directory
 "set autochdir
