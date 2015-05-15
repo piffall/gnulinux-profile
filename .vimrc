@@ -85,6 +85,10 @@ set nobomb
 " System clipboard
 set clipboard=unnamedplus
 
+" Change YCM tab to coexist with snipMate
+let g:ycm_key_list_select_completion = ['<C-TAB>','<Down>']
+let g:ycm_key_list_previous_completion = ['<C-S-TAB>','<Up>']
+
 " Powerline fonts
 " Installation: git clone https://github.com/powerline/fonts.git powerline-fonts && ./powerline-fonts/install.sh
 " You must set one of the installed fonts,
