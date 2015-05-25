@@ -67,6 +67,7 @@ map <F6> :NERDTreeToggle<CR>
 " NERDTree
 let NERDTreeChDirMode=2
 let NERDTreeShowBookmarks=1
+let NERDTreeIgnore = ['\.pyc$']
 
 " Date and type
 " set rulerformat=%39(%{strftime('%x\ %H:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
@@ -94,5 +95,5 @@ let g:ycm_key_list_previous_completion = ['<C-S-TAB>','<Up>']
 " You must set one of the installed fonts,
 " https://github.com/powerline/fonts/blob/master/README.rst
 " Uncomment next line to enable
-let g:airline_powerline_fonts = 1
+" let g:airline_powerline_fonts = 1
 
