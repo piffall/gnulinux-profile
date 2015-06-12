@@ -19,6 +19,7 @@ color default
 	Plugin 'Xuyuanp/nerdtree-git-plugin'
 	Plugin 'bling/vim-airline'
 	Plugin 'Valloric/YouCompleteMe'
+	Plugin 'Yggdroot/indentLine'
 
 	" Python
 	Plugin 'nvie/vim-flake8'
