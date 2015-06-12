@@ -98,3 +98,6 @@ let g:ycm_key_list_previous_completion = ['<C-S-TAB>','<Up>']
 " Uncomment next line to enable
 " let g:airline_powerline_fonts = 1
 
+" lineIndent
+let g:indentLine_char = '│'
+let g:indentLine_color_term = 239
