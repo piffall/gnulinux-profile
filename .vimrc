@@ -1,12 +1,11 @@
 " Syntax highlight
 syntax on
 color default
+set nocompatible
+filetype off
 
 " Vundle
 " {
- 	set nocompatible
-	filetype off
-
 	" Initiate Vundle
 	set rtp+=~/.vim/bundle/Vundle.vim
 	call vundle#begin()
@@ -34,7 +33,11 @@ filetype plugin on
 filetype plugin indent on
 
 " If forgot sudo before edit
-cmap w!! w !sudo tee %<CR>
+cnoremap w!! w !sudo tee %<CR>
+set shortmess=atI
+
+" Leader key
+let mapleader = " "
 
 " Easy windows
 "map <C-J> <C-W>j
@@ -44,8 +47,8 @@ cmap w!! w !sudo tee %<CR>
 "map <C-K> <C-W>k
 
 " You might also find this useful
-" PHP Generated Code Highlights (HTML & SQL)                                              
-"let php_sql_query=1                                                                                        
+" PHP Generated Code Highlights (HTML & SQL)
+"let php_sql_query=1
 "let php_htmlInStrings=1
 
 " Line numbers
@@ -84,6 +87,9 @@ set nobackup
 set noswapfile
 set nobomb
 
+" Break lines at word end
+set linebreak
+
 " System clipboard
 set clipboard=unnamedplus
 
@@ -101,3 +107,9 @@ let g:ycm_key_list_previous_completion = ['<C-S-TAB>','<Up>']
 " lineIndent
 let g:indentLine_char = '│'
 let g:indentLine_color_term = 239
+
+" Undo
+set undofile
+set undodir=~/.vim/undo
+set undolevels=1000
+set undoreload=10000
