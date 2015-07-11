@@ -17,7 +17,7 @@ filetype off
 	Plugin 'vim-scripts/taglist.vim'
 	Plugin 'Xuyuanp/nerdtree-git-plugin'
 	Plugin 'bling/vim-airline'
-	Plugin 'Valloric/YouCompleteMe'
+	Plugin 'davidhalter/jedi-vim'
 	Plugin 'Yggdroot/indentLine'
 
 	" Python
