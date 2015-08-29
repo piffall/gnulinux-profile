@@ -19,10 +19,14 @@ filetype off
 	Plugin 'bling/vim-airline'
 	Plugin 'Valloric/YouCompleteMe'
 	Plugin 'Yggdroot/indentLine'
+	Plugin 'StripWhiteSpaces'
 
 	" Python
 	Plugin 'nvie/vim-flake8'
 	Plugin 'pydoc.vim'
+
+	" Scala
+	Plugin 'derekwyatt/vim-scala'
 
 	call vundle#end()
 
